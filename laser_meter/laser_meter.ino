@@ -30,6 +30,7 @@ void setup() {
   digitalWrite(2,HIGH);
 }
 
+// servo drive turns control 
 void loop() { 
   for (pos = START_ANGLE_POSITION; pos <= END_ANGLE_POSITION; pos += STEP_ANGLE_POSITION) { 
     myservo.write(pos);              
