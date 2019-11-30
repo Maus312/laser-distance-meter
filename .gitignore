@@ -3,6 +3,7 @@
 *.aar
 *.ap_
 *.aab
+*.jar
 
 # Files for the ART/Dalvik VM
 *.dex
@@ -18,6 +19,7 @@ out/
 # release/
 
 # Gradle files
+*/gradle/wrapper/
 .gradle/
 build/
 
@@ -38,6 +40,7 @@ captures/
 
 # IntelliJ
 *.iml
+.idea/
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/gradle.xml
@@ -84,3 +87,4 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 android_project/LaserMeter/build.gradle
+android_project/LaserMeter/gradle/wrapper/gradle-wrapper.properties

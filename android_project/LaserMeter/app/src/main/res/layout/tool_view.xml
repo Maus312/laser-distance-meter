@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/buttonsControlLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewLedWork"
+                    android:layout_width="@dimen/led_size"
+                    android:layout_height="@dimen/led_size"
+                    android:layout_margin="@dimen/margins"
+                    android:background="@drawable/circle_inactivate" />
+
+                <Button
+                    android:id="@+id/buttonWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:text="@string/button_work" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewLedLaser"
+                    android:layout_width="@dimen/led_size"
+                    android:layout_height="@dimen/led_size"
+                    android:layout_margin="@dimen/margins"
+                    android:background="@drawable/circle_inactivate" />
+
+                <Button
+                    android:id="@+id/buttonLaser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:text="@string/button_laser" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonResetScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonsControlLayout"
+            android:layout_alignParentRight="true"
+            android:background="?android:selectableItemBackground"
+            android:paddingLeft="@dimen/margins"
+            android:paddingRight="@dimen/margins"
+            android:text="@string/button_reset_scan" />
+
+    </RelativeLayout>
+
+</LinearLayout>

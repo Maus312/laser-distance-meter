@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margins_sector_view">5dp</dimen>
+    <dimen name="margins">16dp</dimen>
+    <dimen name="led_size">15dp</dimen>
+</resources>

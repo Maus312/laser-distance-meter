@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="button_work">Run</string>
+
+    <string name="button_work_activated">Stop</string>
+    <string name="button_work_deactivated">Run</string>
+
+    <string name="button_laser">Laser</string>
+
+    <string name="button_laser_activated">Off</string>
+    <string name="button_laser_deactivated">On</string>
+
+    <string name="button_reset_scan">Reset scan</string>
+
+</resources>
