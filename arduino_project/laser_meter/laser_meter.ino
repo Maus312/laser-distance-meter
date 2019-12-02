@@ -18,13 +18,13 @@ int pos = 0;    // variable to store the servo position
 
 void setup() {
   pinMode(2, OUTPUT);
-   Serial.begin(9600);
+  Serial.begin(9600);
   Wire.begin();
 
   sensor.init();
   sensor.setTimeout(500);
 
- sensor.setMeasurementTimingBudget(200000);
+  sensor.setMeasurementTimingBudget(200000);
   
   myservo.attach(3); 
   digitalWrite(2,HIGH);
@@ -32,6 +32,7 @@ void setup() {
 
 // servo drive turns control 
 void loop() { 
+  //TODO Rewrite logic with using function pointers,(void)(*operator)(void)
   for (pos = START_ANGLE_POSITION; pos <= END_ANGLE_POSITION; pos += STEP_ANGLE_POSITION) { 
     myservo.write(pos);              
     writeLongRange(pos);
@@ -45,6 +46,7 @@ void loop() {
 }
 
 void writeLongRange(unsigned int i){
+  //TODO Rewrite logic, decomposite logic
   Serial.print(averageDistance(AVERANGE_COUNT));
   if (sensor.timeoutOccurred()) { Serial.print("8000"); }
   Serial.print("-");
