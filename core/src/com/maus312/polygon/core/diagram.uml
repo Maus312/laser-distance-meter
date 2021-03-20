@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="76.0">com.maus312.polygon.core.communication.BasicTranslatorController</node>
+    <node x="0.0" y="441.0">com.maus312.polygon.core.communication.CommandControllerThread</node>
+    <node x="17.5" y="0.0">com.maus312.polygon.core.communication.TranslatorController</node>
+    <node x="17.5" y="294.0">com.maus312.polygon.core.communication.MessageSource</node>
+    <node x="252.0" y="441.0">com.maus312.polygon.core.executable.commands</node>
+    <node x="0.0" y="370.0">com.maus312.polygon.core.communication.BasicMessageSource</node>
+    <node x="0.0" y="223.0">com.maus312.polygon.core.communication.BasicCommandController</node>
+    <node x="17.5" y="147.0">com.maus312.polygon.core.communication.CommandController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.maus312.polygon.core.communication.BasicCommandController" target="com.maus312.polygon.core.communication.CommandController">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="com.maus312.polygon.core.communication.BasicTranslatorController" target="com.maus312.polygon.core.communication.TranslatorController">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="com.maus312.polygon.core.communication.BasicMessageSource" target="com.maus312.polygon.core.communication.MessageSource">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="475.0" y="100.5" />
+  <SelectedNodes>
+    <node>com.maus312.polygon.core.communication.TranslatorController</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
